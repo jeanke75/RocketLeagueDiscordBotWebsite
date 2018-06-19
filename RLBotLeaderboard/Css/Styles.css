@@ -1,0 +1,198 @@
+﻿body
+{
+    background-image: url("Img/main-stripes.png");
+    background-repeat: repeat;
+    background-color: #313131;
+}
+
+.*
+{
+    font-family: Arial;
+}
+
+.Container
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #ECF0F1;
+    flex:1;
+    /* Firefox */
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);
+    /* Safari */
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);
+    /* IE */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);
+}
+
+/* Header styles */
+.Header
+{
+    background-image: url("Img/DIBackground2.png");
+    background-size: cover;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.Title
+{
+    font-size: 50px;
+    color: #D6D2D2;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Navigation styles */
+.Navigation
+{
+    background-color: #B14140;
+    padding: 2px;
+}
+
+.Menu a
+{
+    text-decoration: none;
+    color: #61707A;
+}
+
+.Menu > ul > li
+{
+    background-color: #252525;
+    text-align: center;
+    margin: 2px;
+    width: 150px;
+    padding: 2px 0px;
+    /* Firefox */
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    /* Safari */
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    /* IE */
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Menu > ul > li:hover
+{
+    background-color: #353535;
+}
+
+.Menu > ul > li > a
+{
+    font-size: large;
+    font-weight: bold;
+}
+
+.Menu > ul > li  ul
+{
+    background-color: #353535;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.Menu > ul > li  ul > li
+{
+    background-color: #252525;
+    margin-left: 3px;
+    width: 125px;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 1px;
+}
+
+.Menu > ul > li  ul > li:first-child
+{
+    padding-top: 2px;
+}
+
+.Menu > ul > li  ul > li:last-child
+{
+    padding-bottom: 2px;
+}
+
+.Menu > ul > li  ul > li:hover
+{
+    background-color: #353535;
+}
+
+.Menu > ul > li  ul > li > a
+{
+    font-size: medium;
+}
+
+/* Content styles */
+.Content
+{
+    padding: 25px;
+    height: 100%;
+}
+
+.GridView
+{
+    width: 80%;
+    border: solid 2px black;
+    min-width: 80%;
+    min-height: 100%;
+}
+
+.GridView a /** FOR THE PAGING ICONS AND COLUMN HEADERS  **/
+{
+    background-color: Transparent;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.GridView a:hover /** FOR THE PAGING ICONS HOVER STYLES**/
+{
+    background-color: #000;
+    color: #fff;
+}
+
+.GridView span /** FOR THE PAGING ICONS CURRENT PAGE INDICATOR **/
+{
+    background-color: #c9c9c9;
+    color: #000;
+    padding: 5px;
+}
+
+.GridViewHeader
+{
+    background-color: #646464;
+    color: White;
+    border: none 0px transparent;
+    height: 25px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.GridViewRow
+{
+    background-color: #fff;
+    font-size: 14px;
+    color: #000;
+    min-height: 25px;
+    text-align: left;
+    border: none 0px transparent;
+}
+
+.GridViewPager
+{
+    background-color: #646464;
+    color: White;
+    height: 30px;
+    text-align: left;
+}
+
+.GridView td
+{
+    padding: 5px;
+}
+
+.GridView th
+{
+    padding: 5px;
+}

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Masterpages_Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>RLBot Leaderboard</title>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <link href="~/Css/Styles.css" type="text/css" rel="Stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server" class="Container">
+        <div id="header" class="Header">
+            <span class="Title">RLBot</span>
+        </div>
+        <div id="navigation" class="Navigation">
+            <asp:Menu ID="MainMenu" runat="server" Orientation="Horizontal" StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="false" OnMenuItemClick="MainMenu_MenuItemClick" CssClass="Menu">
+                <StaticHoverStyle CssClass="MenuStaticHover" />
+                <Items>
+                    <asp:MenuItem Text="Players" ToolTip="Players" NavigateUrl="~/Players.aspx">
+                        <asp:MenuItem Text="Leaderboard" ToolTip="Leaderboard" >
+                            <asp:MenuItem Text="Standard" ToolTip="Standard" >
+                                <asp:MenuItem Text="All-time" />
+                                <asp:MenuItem Text="Monthly" />
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Duo" ToolTip="Duo">
+                                <asp:MenuItem Text="All-time" />
+                                <asp:MenuItem Text="Monthly" />
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Solo" ToolTip="Solo">
+                                <asp:MenuItem Text="All-time" />
+                                <asp:MenuItem Text="Monthly" />
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </div>
+        <div id="content" class="Content">
+            <asp:ContentPlaceHolder ID="body" runat="server" />
+        </div>
+    </form>
+</body>
+</html>
